@@ -23,11 +23,13 @@ Gem::Specification.new do |gem|
     "README.markdown"
   ]
 
-  gem.add_runtime_dependency "sinatra",      [">= 1.4.4"]
-  gem.add_runtime_dependency "mongoid", ["> 4.0.0"]
-  gem.add_runtime_dependency "delayed_job",  ["> 2.0.3"]
+  gem.add_runtime_dependency "sinatra"#,      [">= 1.4.0"]
+  gem.add_runtime_dependency "mongoid", ["= 2.5.0"]
+  gem.add_runtime_dependency "bson_ext"
+  
+  gem.add_runtime_dependency "delayed_job",  ["= 3.0.3"]
 
   gem.add_development_dependency "minitest",  ["~> 4.2"]
   gem.add_development_dependency "rack-test", ["~> 0.6"]
-  gem.add_development_dependency "rails",     ["~> 4.0"]
+  gem.add_development_dependency "rails",     ["~> 3.0"]
 end
