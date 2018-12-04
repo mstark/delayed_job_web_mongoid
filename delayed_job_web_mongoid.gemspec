@@ -24,7 +24,7 @@ Gem::Specification.new do |gem|
   ]
 
   gem.add_runtime_dependency "sinatra"#,      [">= 1.4.0"]
-  gem.add_runtime_dependency "mongoid", ["= 2.5.0"]
+  gem.add_runtime_dependency "mongoid", ["<= 2.5.2"]
   gem.add_runtime_dependency "bson_ext","1.7.0"
   
   gem.add_runtime_dependency "delayed_job",  ["= 3.0.3"]
